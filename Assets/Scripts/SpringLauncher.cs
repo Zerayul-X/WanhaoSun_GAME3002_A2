@@ -26,28 +26,30 @@ public class SpringLauncher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if key is pressed, bring the launcher down
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ifLaunching = false;
-            launcher.velocity = -launchPosition.normalized * 2;
-        }
+        ////if key is pressed, bring the launcher down
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    ifLaunching = false;
+        //    launcher.velocity = -launchPosition.normalized * 2;
+        //}
 
-        //if key is released, realase the launcher
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            launcher.velocity = Vector3.zero;
-            ifLaunching = true;
-        }
+        ////if key is released, realase the launcher
+        //if (Input.GetKeyUp(KeyCode.Space))
+        //{
+        //    launcher.velocity = Vector3.zero;
+        //    ifLaunching = true;
+        //}
     }
     void FixedUpdate()
     {
+        acc = SpringFactor * (transform.position - launcher.transform.position);
+        launcher.AddForce(acc, ForceMode.Acceleration);
         //add the force to the launcher, launch the ball
-        if (ifLaunching)
-        {
-            acc = SpringFactor * (transform.position - launcher.transform.position);
-            launcher.AddForce(acc, ForceMode.Acceleration);
-        }
+        //if (ifLaunching)
+        //{
+        //    acc = SpringFactor * (transform.position - launcher.transform.position);
+        //    launcher.AddForce(acc, ForceMode.Acceleration);
+        //}
     }
 }
 

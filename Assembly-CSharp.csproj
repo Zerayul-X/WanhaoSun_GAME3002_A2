@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{74EB18CB-F660-2E15-0C6E-452D60086EA8}</ProjectGuid>
+    <ProjectGuid>{364AD19E-E788-603E-05B6-C330D137254B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,12 +56,14 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Launcher.cs" />
     <Compile Include="Assets\Scripts\SpringLauncher.cs" />
     <Compile Include="Assets\Scripts\PhysicsRB.cs" />
     <Compile Include="Assets\Scripts\PhysicsEngineLite.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\Flipper.cs" />
     <Compile Include="Assets\Scripts\BallBehavior.cs" />
+    <Compile Include="Assets\Scripts\Hammar.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

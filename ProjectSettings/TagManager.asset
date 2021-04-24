@@ -4,15 +4,19 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - ActiveBumper
   - OuterWall
-  - InnerWall
   - BashToy
   - OB
-  - Flipper
-  - Stopper
-  - Bumper
-  - OverActive
+  - Spike
+  - SpeedUp
+  - SlowDown
+  - Key1
+  - Gate1
+  - Gate2
+  - Key2
+  - prize
+  - Victory
+  - Fail
   layers:
   - Default
   - TransparentFX
